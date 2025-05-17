@@ -26,5 +26,28 @@ This is a command-line-based Restaurant Management System written in **C**. It s
 
 ---
 
-## 📂 Project Structure
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+- GCC compiler (or Code::Blocks with GCC setup)
+- Git (optional, for cloning/pushing to GitHub)
+
+### 💻 Running the Code
+
+#### Method 1: Using Code::Blocks
+1. Open Code::Blocks.
+2. Open the `.cbp` project or create a new one and add `ds.c`.
+3. Click **Build and Run** (`F9`).
+
+#### Method 2: Using Terminal (VS Code or Git Bash)
+
+```bash
+# Navigate to your project folder
+cd /d/restarunt
+
+# Compile the code
+gcc ds.c -o restaurant
+
+# Run the compiled program
+./restaurant
 
