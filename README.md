@@ -1,6 +1,6 @@
 # Restaurant Management System 🍽️
 
-This is a command-line-based Restaurant Management System written in **C**. It supports basic functionalities for **admin** and **customer** roles. The project uses **doubly linked lists** to manage menu items, orders, and sales data efficiently.
+A terminal-based Restaurant Management System built using **C**. It features separate workflows for **admin** and **customer** roles and leverages **doubly linked lists** for managing menu items, orders, and sales data.
 
 ---
 
@@ -15,39 +15,43 @@ This is a command-line-based Restaurant Management System written in **C**. It s
 ### 👤 Customer Section
 - Place an order
 - View ordered items
-- Delete items from the order
+- Delete items from your order
 - Display final bill with total amount
 
 ---
 
-## 🧾 Data Structures Used
-- **Doubly Linked List**: Used to manage the menu, customer orders, and total sales.
-- **Structs**: Defined for each node to hold food item details.
+## 🧾 Technologies Used
+
+- **Language**: C
+- **Data Structure**: Doubly Linked List
+- **IDE**: Visual Studio Code (VS Code)
+- **Compiler**: GCC (via MinGW or WSL)
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started in VS Code (Windows)
 
-### ✅ Prerequisites
-- GCC compiler (or Code::Blocks with GCC setup)
-- Git (optional, for cloning/pushing to GitHub)
+### ✅ Step 1: Install Prerequisites
 
-### 💻 Running the Code
+- Install [VS Code](https://code.visualstudio.com/)
+- Install [MinGW](https://www.mingw-w64.org/downloads/) and add `bin` path to **System Environment Variables**
+- Install C/C++ Extension in VS Code (Microsoft)
+- Restart your system if needed
 
-#### Method 1: Using Code::Blocks
-1. Open Code::Blocks.
-2. Open the `.cbp` project or create a new one and add `ds.c`.
-3. Click **Build and Run** (`F9`).
+### ✅ Step 2: VS Code Configuration (Optional)
 
-#### Method 2: Using Terminal (VS Code or Git Bash)
+1. In VS Code, go to settings and search for `code-runner.executorMap`
+2. Add this under your workspace or global `settings.json`:
 
-```bash
-# Navigate to your project folder
-cd /d/restarunt
-
+```json
+{
+  "code-runner.executorMap": {
+    "c": "gcc \"$file\" -o \"$fileNameWithoutExt\" && \"$fileNameWithoutExt\""
+  },
+  "code-runner.runInTerminal": true
+}
 # Compile the code
-gcc ds.c -o restaurant
+gcc ds.c -o restaurant.exe
 
-# Run the compiled program
-./restaurant
-
+# Run the program
+./restaurant.exe
